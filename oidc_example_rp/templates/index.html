@@ -1,0 +1,6 @@
+<h1>HELLO WORLD</h1>
+{% if request.user.is_anonymous %}
+    <p><a href="{% url 'authmachine:sso-login' %}">Log in</a></p>
+{% else %}
+<p>Logged in as {{ request.user }}. <a href="{% url 'authmachine:sso-logout' %}">Logout</a></p>
+{% endif %}
