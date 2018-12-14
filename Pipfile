@@ -11,6 +11,7 @@ requests = "*"
 oic = "*"
 pycryptodome = "*"
 pycryptodomex = "*"
+bjoern = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"

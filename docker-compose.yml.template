@@ -1,0 +1,16 @@
+version: '2'
+services:
+        oidc-example-rp:
+                image: carrierwave/oidc-example-rp
+                ports: '8080:8080'
+                restart: unless-stopped
+                environment:
+                        SECRET_KEY=
+                        AUTHMACHINE_URL=
+                        AUTHMACHINE_CLIENT_ID=
+                        AUTHMACHINE_CLIENT_SECRET=
+                        AUTHMACHINE_STATE_ENCRYPTION_KEY=
+                        AUTHMACHINE_SCOPE=
+                        AUTHMACHINE_API_TOKEN=
+                        SENTRY_DSN=
+
